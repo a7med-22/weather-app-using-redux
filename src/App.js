@@ -175,10 +175,8 @@ function App() {
                         alignItems: "center",
                       }}
                     >
-                      {isLoading ? (
+                      {isLoading && (
                         <CircularProgress style={{ color: "white" }} />
-                      ) : (
-                        ""
                       )}
 
                       <Typography variant="h1" style={{ textAlign: "right" }}>

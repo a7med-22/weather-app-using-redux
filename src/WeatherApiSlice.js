@@ -45,10 +45,9 @@ export const weatherApiSlice = createSlice({
       })
       .addCase(fetchWeather.fulfilled, (state, action) => {
         state.isLoading = false;
-        console.log("+++++++++++++++++++++++++++++");
         console.log(action);
         state.weather = action.payload;
-        console.log(state.weatherg      );
+        console.log(state.weatherg);
       })
       .addCase(fetchWeather.rejected, (state, actoin) => {
         state.isLoading = false;
